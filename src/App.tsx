@@ -46,7 +46,7 @@ export default function Page() {
   };
 
   return (
-    <div className="-mt-16 flex h-screen flex-col items-center justify-center">
+    <div className="-mt-16 flex h-screen flex-col items-center justify-center style={{ paddingLeft: "20px" }}">
       {yesPressed ? (
         <>
           <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzczOWsxZ3M1YjRrYWp3aHRnOGNhMnFuNjJ6anFzaXZpZWU2ZW5jdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9AIeG4ZmVb4mYdlIOx/giphy.gif" />
