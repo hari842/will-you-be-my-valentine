@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function Page() {
   const [noCount, setNoCount] = useState(0);
   const [yesPressed, setYesPressed] = useState(false);
-  const yesButtonSize = noCount * 20 + 16;
+  const yesButtonSize = noCount * 10 + 16;
 
   const handleNoClick = () => {
     setNoCount(noCount + 1);
@@ -14,20 +14,32 @@ export default function Page() {
     const phrases = [
       "No",
       "Are you sure?",
+      "Think again",
+      "Surely not",
+      "Give it another thought",
+      "This could be a mistake",
+      "Don't be so cold",
+      "Change of heart?",
       "What if I asked really nicely?",
-      "Pretty please",
-      "With a chocolate rice cake on top",
-      "What about a matcha frostie",
-      "PLEASE POOKIE",
-      "But :*(",
-      "I am going to die",
-      "Yep im dead",
-      "ok ur talking to nathan's ghost",
-      "please babe",
-      ":((((",
-      "PRETTY PLEASE",
-      "Estoy muerto",
-      "No :(",
+      "Sunshine please",
+      "How about tiramisu cake?",
+      "With a mosambi juice?",
+      "With Vietnamese coffee from Blue Tokai Coffee Roasters?",
+      "More Harry Potter Kinder Joys?",
+      "Don't give trass to me please",
+      "Please Mrunal",
+      "I'm going to die",
+      "Thanks to you, I'm dead",
+      "Okay, you're talking to Hari's ghost",
+      "Please re",
+      "Pch pch",
+      "What is this Mrunal, don't make me cry re",
+      "Please Mrunal",
+      "You won",
+      "You're impossible",
+      "Now the game begins",
+      "Best of luck",
+      "NO :(",
     ];
 
     return phrases[Math.min(noCount, phrases.length - 1)];
@@ -37,8 +49,8 @@ export default function Page() {
     <div className="-mt-16 flex h-screen flex-col items-center justify-center">
       {yesPressed ? (
         <>
-          <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
-          <div className="my-4 text-4xl font-bold">WOOOOOO!!! I love you pookie!! ;))</div>
+          <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzczOWsxZ3M1YjRrYWp3aHRnOGNhMnFuNjJ6anFzaXZpZWU2ZW5jdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9AIeG4ZmVb4mYdlIOx/giphy.gif" />
+          <div className="my-4 text-4xl font-bold">WOOOOOO!!! Still Cold Hearted, Get Some sunshine :')))</div>
         </>
       ) : (
         <>
